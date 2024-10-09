@@ -1,12 +1,14 @@
 pluginManagement {
-    repositories {
+        repositories {
+        /* CONTENT FILTERING MAY HAVE BEEN CAUSING ISSUES
         google {
             content {
                 includeGroupByRegex("com\\.android.*")
                 includeGroupByRegex("com\\.google.*")
                 includeGroupByRegex("androidx.*")
             }
-        }
+        } */
+        google() // Simple inclusion of google repository without content filtering
         mavenCentral()
         gradlePluginPortal()
     }
